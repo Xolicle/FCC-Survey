@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="heading">
+        <h1>Survey Form</h1>
+        <p>Thank you for taking time to help us improve the platform</p>
+    </header>
+    <div class="container">
+        <form>
+            <fieldset class="info">
+                <label for="name">Name:</label>
+                    <input type="text" id="name" name="">             
+                <label for="email"> Email:</label>
+                    <input type="email" id="email" name="">
+                <label for="age">Age:</label>
+                    <input type="number" id="number" name="">
+            </fieldset>
+            <fieldset class="role">
+                <p>Which best describes your current role?</p>
+                <label for="role">
+                    <select>
+                        <option value="" disabled selected>Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full-Time Job</option>
+                        <option value="3">Prefer not to say</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <p> Would you recommend FCC to a friend?</p>
+                <label for="definitely">
+                    <input type="radio" id="definitely" name="D" checked>
+                    Definitely
+                </label>
+                <br>
+                <label for="maybe">
+                    <input type="radio" id="maybe" name="M">
+                    Maybe
+                </label>
+                <br>
+                <label for="not-sure">
+                    <input type="radio" id="not-sure" name="NS">
+                    Not Sure
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>What is your favorite feature of FCC?</p>
+                <label for="features">
+                    <select>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open Source</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>What would you like to see improved?
+                    <span>(Check all that apply)</span></p>
+                <label>
+                    <input type="checkbox" name="ideas" id="front-end">
+                    Front-end Projects
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="back-end">
+                    Back-end Projects
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="data">
+                    Data Visualization
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="challenges">
+                    Challenges
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="open-source">
+                    Open Source Community
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="gitter">
+                    Gitter help rooms
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="videos">
+                    Videos
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="meetups">
+                    City Meetups
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="wiki">
+                    Wiki
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="forum">
+                    Forum
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ideas" id="courses">
+                    Additional Courses
+                </label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <label for="comment">
+                   <p>Any comments or suggestions?</p> 
+                    <textarea rows="5" cols="50" placeholder="Enter your comment here"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" name="submit" id="btn">
+        </form>
+    </div>
+    
+</body>
+</html>
